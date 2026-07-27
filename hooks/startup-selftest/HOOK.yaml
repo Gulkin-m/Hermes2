@@ -1,0 +1,7 @@
+name: startup-selftest
+description: >-
+  Runs a live component self-test when the gateway starts (models, providers,
+  MCP servers, orchestration) and posts a 7/7 report card to the Telegram
+  home channel.
+events:
+  - gateway:startup

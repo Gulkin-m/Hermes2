@@ -1,0 +1,31 @@
+# ── Secrets — NEVER commit ──────────────────────────────────
+.env
+.env.*
+auth.json
+auth.lock
+
+# ── Runtime state / caches / junk ───────────────────────────
+logs/
+cache/
+audio_cache/
+image_cache/
+sessions/
+memories/
+pairing/
+gateway-service/
+*.db
+*.db-*
+*.db.*
+*.lock
+*.pid
+gateway_state.json
+gateway.pid
+sessions.json
+channel_directory.json
+models_dev_cache.json
+request_dump_*.json
+cron/
+
+# ── Python bytecode ─────────────────────────────────────────
+__pycache__/
+*.pyc

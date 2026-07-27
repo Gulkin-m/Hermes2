@@ -1,0 +1,7 @@
+name: replicate
+version: 1.0.0
+description: "Replicate image generation backend (Imagen 4 Ultra, FLUX 1.1 Pro Ultra, Ideogram v3, Recraft v3)."
+author: user
+kind: backend
+requires_env:
+  - REPLICATE_API_TOKEN
