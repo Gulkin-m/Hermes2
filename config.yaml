@@ -345,7 +345,7 @@ memory:
   user_char_limit: 1375
   provider: ''
 delegation:
-  model: anthropic/claude-sonnet-4.6
+  model: anthropic/claude-opus-4.8
   provider: openrouter
   base_url: ''
   api_key: ''
@@ -553,12 +553,10 @@ mcp_servers:
     headers:
       Authorization: Bearer ${MCP_GITHUB_API_KEY}
     url: https://api.githubcopilot.com/mcp/
-
   vercel:
     headers:
       Authorization: Bearer ${MCP_VERCEL_TOKEN}
     url: https://mcp.vercel.com
-
 plugins:
   enabled:
   - image_gen/replicate
