@@ -541,6 +541,10 @@ fallback_model:
   model: deepseek/deepseek-chat
   provider: openrouter
 mcp_servers:
+  context7:
+    headers:
+      Authorization: Bearer ${MCP_CONTEXT7_API_KEY}
+    url: https://mcp.context7.com/mcp
   firecrawl:
     headers:
       Authorization: Bearer ${MCP_FIRECRAWL_API_KEY}
@@ -549,6 +553,12 @@ mcp_servers:
     headers:
       Authorization: Bearer ${MCP_GITHUB_API_KEY}
     url: https://api.githubcopilot.com/mcp/
+
+  vercel:
+    headers:
+      Authorization: Bearer ${MCP_VERCEL_TOKEN}
+    url: https://mcp.vercel.com
+
 plugins:
   enabled:
   - image_gen/replicate
